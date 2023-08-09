@@ -97,11 +97,11 @@ methods.
 
 ## Getting Started
 
-IntelliJ has an official Azure plugin that can be installed for easy access to the repo. Setup instructions can be found [here](https://docs.microsoft.com/en-us/azure/developer/java/toolkit-for-intellij/sign-in-instructions).
+IntelliJ has an official Azure plugin that can be installed for easy access to the repo. Setup instructions can be found
 
 If you don't want to use the Azure plugin, the repo can be manually cloned with this command
 ```code
-git clone https://publixvso.visualstudio.com/DefaultCollection/S0PWEBXX_WebSite/_git/mobile-app-automation.v2
+git clone https://publixvso.visualstudio.com/DefaultCollection/
 ```
 
 Maven sources from `pom.xml` should load automatically. If it doesn't, right click `pom.xml` and select `maven > clean install`
@@ -328,17 +328,3 @@ are executed by using the `src/test/java/cucumber/TestRunner.java`. The resultin
 the summary and detailed information for the scenarios that were executed, in addition if the scenario failed, a screenshot will be added.
 
 **Note:** The HTML Report is not generated when the scripts are directly executed from the `.feature` file.
-
-
-## Additional Info
-### Wiki Location
-The wiki for this codebase is contained in the [AppTestAutomationWiki](https://publixvso.visualstudio.com/DefaultCollection/S0PWEBXX_WebSite/_git/AppTestAutomationWiki) repo.
-
-### Elements Without IDs
-Sometimes you will encounter an element in the app that does not have any guaranteed way to reference it (weak references). When this happens, follow these steps:
-1. Open the [Documenting Missing IDs](https://publixvso.visualstudio.com/DefaultCollection/S0PWEBXX_WebSite/_git/AppTestAutomationWiki?path=/Documenting-Missing-IDs.md&_a=preview) page of the app automation wiki and follow its steps.
-2. In the code, create the element using the weak references
-   1. Leave a comment next to the `@FindBy` with the ticket number you created during step 1
-3. When using that element in code, keep any unstable/workaround logic in its own method at the bottom of the document.
-4. Add `WORKAROUND` to the method name (e.g. `clickSomeButtonWORKAROUND()`)
-5. Comment the ticket number next to the method with a brief description about why this method was needed.
