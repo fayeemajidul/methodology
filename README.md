@@ -1,5 +1,3 @@
-# Publix Mobile App Automation Repository
-
 Java Appium Test Framework for Android. This is a Test Automation project that uses Nodejs, Appium 2.0,
 Amazon Corretto Java 11, TestNG, Cucumber and Extent Reports for macOS. This framework utilizes the Page Object Model to store an
 object repository of reusable mobile elements and reusable driver actions with the help of commonly used utility
